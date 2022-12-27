@@ -1,0 +1,23 @@
+main {
+  max-width: 800px;
+  margin-inline: auto;
+  padding: 0 2rem;
+}
+p {
+  padding-bottom: 2rem;
+}
+.socials {
+  display: flex;
+  padding: 0;
+}
+.socials li {
+  list-style: none;
+  padding: 0 0.5rem;
+}
+.socials i {
+  font-size: var(--fs-tertiary);
+  color: var(--neutral-900);
+}
+.socials i:hover {
+  color: var(--primary-600);
+}

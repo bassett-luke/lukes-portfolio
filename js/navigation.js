@@ -7,18 +7,19 @@ hamburger.addEventListener("click", function () {
   menu.classList.toggle("is-active");
 });
 
-// NAVIGATION LINKS ACTIVE STATE
-const home = document.getElementById("home");
-const about = document.getElementById("about");
-const work = document.getElementById("work");
-const contact = document.getElementById("contact");
-
 document.querySelectorAll(".menu").forEach((n) =>
   n.addEventListener("click", () => {
     hamburger.classList.remove("is-active");
     menu.classList.remove("is-active");
   })
 );
+
+// NAVIGATION LINKS ACTIVE STATE
+const home = document.getElementById("home");
+const about = document.getElementById("about");
+const work = document.getElementById("work");
+const contact = document.getElementById("contact");
+
 document.getElementById("home").addEventListener("click", () => {
   home.classList.add("is-active");
   about.classList.remove("is-active");
@@ -54,5 +55,3 @@ document.getElementById("contact").addEventListener("click", () => {
   blog.classList.remove("is-active");
   contact.classList.add("is-active");
 });
-
-// window.alert("THIS WEBSITE IS UNDER CONSTRUCTION, NOTHING IS FINAL!!");
